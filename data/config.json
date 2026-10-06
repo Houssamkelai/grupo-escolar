@@ -1,0 +1,117 @@
+{
+  "modeInterior": false,
+  "model": "./models/grupo_escolar_web.glb",
+  "languages": [
+    "fr",
+    "ar",
+    "es"
+  ],
+  "defaultLanguage": "fr",
+  "interior": {
+    "enabled": false,
+    "model": null,
+    "tour": []
+  },
+  "freeViews": {
+    "aerial": {
+      "id": 1,
+      "title": {
+        "fr": "Vue aérienne",
+        "es": "Vista aérea",
+        "ar": "منظر جوي"
+      },
+      "description": {
+        "fr": "Le corps nord et les deux ailes encadrent la cour. Le pavillon central avance au milieu de cet ensemble.",
+        "es": "El cuerpo norte y las dos alas enmarcan el patio. El pabellón central se adelanta en el centro del conjunto.",
+        "ar": "يحيط الجناح الشمالي والجناحان الشرقي والغربي بالفناء، ويتقدم الجناح المركزي وسط هذا التكوين."
+      },
+      "position": [
+        57.5,
+        72,
+        78
+      ],
+      "target": [
+        0.0,
+        2,
+        -3
+      ],
+      "holdSeconds": 10,
+      "orbit": false
+    },
+    "court": {
+      "id": 6,
+      "title": {
+        "fr": "La cour principale",
+        "es": "El patio principal",
+        "ar": "الفناء الرئيسي"
+      },
+      "description": {
+        "fr": "Les trois corps du bâtiment et le pavillon composent les limites de ce grand espace ouvert.",
+        "es": "Los tres cuerpos del edificio y el pabellón delimitan este gran espacio abierto.",
+        "ar": "تحدد أجنحة المبنى الثلاثة والجناح المركزي حدود هذا الفضاء الواسع المفتوح."
+      },
+      "position": [
+        0.0,
+        7,
+        19
+      ],
+      "target": [
+        0.0,
+        4,
+        -14
+      ],
+      "holdSeconds": 10,
+      "orbit": false
+    },
+    "north": {
+      "id": 2,
+      "title": {
+        "fr": "La façade principale",
+        "es": "La fachada principal",
+        "ar": "الواجهة الرئيسية"
+      },
+      "description": {
+        "fr": "Sur l’avenue Moulay Ismail, découvrez le portail, les arcs, les corniches et le couronnement en gradins.",
+        "es": "En la avenida Moulay Ismail, observe la portada, los arcos, las cornisas y el remate escalonado.",
+        "ar": "على شارع مولاي إسماعيل، تأمل المدخل والأقواس والأفاريز والتتويج المدرج."
+      },
+      "position": [
+        0.0,
+        6,
+        -66
+      ],
+      "target": [
+        0.0,
+        5,
+        -30
+      ],
+      "holdSeconds": 10,
+      "orbit": false
+    },
+    "roof": {
+      "id": 10,
+      "title": {
+        "fr": "Une toiture en tuiles",
+        "es": "Una cubierta de tejas",
+        "ar": "سقف من القرميد"
+      },
+      "description": {
+        "fr": "La couverture s’étend sur tout le pavillon. Ses versants se raccordent autour de l’avant polygonal.",
+        "es": "La cubierta se extiende sobre todo el pabellón. Sus faldones se unen alrededor del frente poligonal.",
+        "ar": "يغطي السقف الجناح المركزي بأكمله، وتتلاقى سطوحه المائلة حول الواجهة المضلعة."
+      },
+      "position": [
+        15.5,
+        18,
+        6
+      ],
+      "target": [
+        0.0,
+        9,
+        -11
+      ],
+      "holdSeconds": 10,
+      "orbit": false
+    }
+  }
+}

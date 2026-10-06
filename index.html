@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#eee9de"><meta name="description" content="Visite patrimoniale 3D extérieure du Grupo Escolar España, Collège Imam Malik à Larache.">
+<title>Grupo Escolar España — Visite 3D</title>
+<link rel="icon" href="./images/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-mode="home">
+<a class="skip" href="#main">Aller au contenu</a>
+<div id="viewer" aria-label="Vue 3D extérieure du bâtiment"></div><div id="hotspots"></div>
+<header class="topbar"><a href="./index.html" id="home-link" class="brand" aria-label="Accueil"><span class="seal">GE</span><span>GRUPO ESCOLAR<br><small>ESPAÑA · LARACHE</small></span></a><nav class="languages" aria-label="Langue"><button data-lang="fr" aria-pressed="true">FR</button><span>/</span><button data-lang="ar" lang="ar" aria-pressed="false">العربية</button><span>/</span><button data-lang="es" aria-pressed="false">ES</button></nav></header>
+<main id="main">
+<section id="home" class="home-panel"><p class="eyebrow" data-i18n="eyebrow">PATRIMOINE DE LARACHE</p><h1>GRUPO <br>ESCOLAR<br><em>ESPAÑA</em></h1><p class="subtitle" data-i18n="subtitle">Collège Imam Malik — Larache</p><p class="intro" data-i18n="intro">Visite virtuelle 3D d’un édifice historique de Larache</p><div class="home-actions"><button id="start" class="primary" disabled><span data-i18n="start">COMMENCER LA VISITE GUIDÉE</span><span aria-hidden="true">↗</span></button><button id="explore" class="secondary" disabled data-i18n="explore">EXPLORER LIBREMENT</button><button id="history" class="text-button" data-i18n="history">HISTOIRE DU BÂTIMENT</button></div></section>
+<div class="home-caption"><span class="caption-line"></span><p data-i18n="caption">Une architecture à découvrir.<br>Une cour, des façades, un lieu.</p><span class="edition">01 — <span data-i18n="exterior">PARCOURS EXTÉRIEUR</span></span></div>
+<section id="experience" hidden><div class="experience-top"><span class="pill" id="mode-label"></span><button class="light-button" id="back-home" data-i18n="home">Accueil</button></div>
+<section id="tour-panel" class="glass" hidden aria-label="Visite guidée"><div class="panel-top"><span id="step-counter" class="eyebrow"></span><button id="open-steps" class="text-button" data-i18n="steps">Les étapes</button></div><div id="step-progress" aria-hidden="true"></div><h2 id="step-title"></h2><p id="step-description"></p><div class="tour-controls"><button id="prev" class="icon-button" aria-label="Étape précédente">←</button><button id="play" class="light-button"></button><button id="next" class="icon-button" aria-label="Étape suivante">→</button></div><div id="tour-end" hidden><p class="eyebrow" data-i18n="end">FIN DE LA VISITE</p><button id="restart" class="secondary" data-i18n="restart">RECOMMENCER</button><button id="end-explore" class="primary" data-i18n="explore">EXPLORER LIBREMENT</button></div><button id="exit-tour" class="text-button small" data-i18n="switchFree">Passer en exploration libre</button></section>
+<section id="free-panel" class="glass" hidden><p class="eyebrow" data-i18n="free">EXPLORATION LIBRE</p><h2 data-i18n="chooseView">Choisir un point de vue</h2><div class="view-buttons"><button data-view="aerial" data-i18n="aerial">Ensemble</button><button data-view="court" data-i18n="court">Dans la cour</button><button data-view="north" data-i18n="north">Façade nord</button><button data-view="roof" data-i18n="roof">Toiture</button></div><p class="small hint" data-i18n="gesture">Glissez pour tourner, pincez pour zoomer. Deux doigts ou clic droit pour déplacer la vue.</p><button id="free-tour" class="text-button" data-i18n="guided">Visite guidée</button></section>
+<div id="walk-pad" hidden aria-label="Déplacement"><button data-move="forward" aria-label="Avancer">↑</button><div><button data-move="left" aria-label="Gauche">←</button><button data-move="back" aria-label="Reculer">↓</button><button data-move="right" aria-label="Droite">→</button></div></div>
+<div class="viewer-tools"><button id="toggle-hotspots" class="light-button" aria-pressed="true" data-i18n="points">Points d’intérêt</button><button id="fullscreen" class="icon-button" aria-label="Plein écran">⛶</button><button id="help" class="icon-button" aria-label="Aide">?</button></div><p id="status" role="status" aria-live="polite"></p>
+</section>
+</main>
+<footer class="footer"><span data-i18n="footer">LARACHE, MAROC · VISITE PATRIMONIALE</span><button id="about" data-i18n="about">À propos du modèle</button></footer>
+<div id="loading" role="status" aria-live="polite"><span class="seal large">GE</span><p data-i18n="loading">Chargement de la visite 3D...</p><progress id="load-progress" max="100" value="0"></progress><span id="load-value">0 %</span><p id="load-error" hidden></p><button id="retry" class="secondary" hidden data-i18n="retry">Réessayer</button></div>
+<dialog id="info-dialog"><button id="close-dialog" class="icon-button close" aria-label="Fermer">×</button><p id="dialog-kicker" class="eyebrow"></p><h2 id="dialog-title"></h2><div id="dialog-body"></div></dialog>
+<noscript>Cette visite nécessite JavaScript et un navigateur compatible WebGL 2.</noscript>
+<script>
+(() => {
+ const fail = message => {
+  const error = document.getElementById('load-error');
+  error.textContent = message; error.hidden = false;
+  document.getElementById('load-value').textContent = 'Chargement interrompu';
+  const retry = document.getElementById('retry'); retry.hidden = false;
+  retry.onclick = () => location.reload();
+ };
+ if (location.protocol === 'file:') {
+  fail('Pour ouvrir la visite sur cet ordinateur, utilisez LANCER_VISITE.cmd dans le dossier grupo escolar. Sur Internet, ouvrez l’adresse du site publié. Le fichier HTML ne peut pas charger le modèle par un simple double-clic.');
+ } else {
+  import('./js/main.js').catch(() => fail('Impossible de charger les fichiers de la visite. Vérifiez que le serveur fonctionne, puis cliquez sur Réessayer.'));
+ }
+})();
+</script>
+</body></html>

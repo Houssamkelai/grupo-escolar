@@ -1,0 +1,8 @@
+{
+  "glb_structure": "passed",
+  "embedded_images": true,
+  "triangles": 297323,
+  "source_sha256_unchanged": "ba242f1580fd7d5a9fad7aeab689147034679ef10f221fa5d3b4b835a5d56db2",
+  "relative_deployment_scan": "passed",
+  "individual_files_below_25_MB": true
+}

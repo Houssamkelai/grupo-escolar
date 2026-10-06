@@ -1,0 +1,13 @@
+{
+  "source_objects": 1070,
+  "evaluated_occurrences": 3377,
+  "triangles": 297323,
+  "duplicates_removed": 1452,
+  "source_sha256": "ba242f1580fd7d5a9fad7aeab689147034679ef10f221fa5d3b4b835a5d56db2",
+  "glb_bytes": 18902484,
+  "material_batches": 12,
+  "embedded_textures": 5,
+  "geometry_decimated": false,
+  "source_modified": false,
+  "material_note": "Source materials contain no image textures. PBR colors, roughness and metallic preserved. Procedural noise approximated by small embedded tileable color maps; fine shader bump not baked."
+}

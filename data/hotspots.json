@@ -1,0 +1,173 @@
+[
+  {
+    "id": "entry",
+    "title": {
+      "fr": "Entrée principale",
+      "es": "Entrada principal",
+      "ar": "المدخل الرئيسي"
+    },
+    "position": [
+      0.0,
+      3.5,
+      -31.8
+    ],
+    "description": {
+      "fr": "Sur l’avenue Moulay Ismail, découvrez le portail, les arcs, les corniches et le couronnement en gradins.",
+      "es": "En la avenida Moulay Ismail, observe la portada, los arcos, las cornisas y el remate escalonado.",
+      "ar": "على شارع مولاي إسماعيل، تأمل المدخل والأقواس والأفاريز والتتويج المدرج."
+    },
+    "image": "./images/entree-nord.jpg"
+  },
+  {
+    "id": "north",
+    "title": {
+      "fr": "Façade nord",
+      "es": "Fachada norte",
+      "ar": "الواجهة الشمالية"
+    },
+    "position": [
+      -12.5,
+      7,
+      -31.5
+    ],
+    "description": {
+      "fr": "Sur l’avenue Moulay Ismail, découvrez le portail, les arcs, les corniches et le couronnement en gradins.",
+      "es": "En la avenida Moulay Ismail, observe la portada, los arcos, las cornisas y el remate escalonado.",
+      "ar": "على شارع مولاي إسماعيل، تأمل المدخل والأقواس والأفاريز والتتويج المدرج."
+    },
+    "image": null
+  },
+  {
+    "id": "east",
+    "title": {
+      "fr": "Aile Est",
+      "es": "Ala este",
+      "ar": "الجناح الشرقي"
+    },
+    "position": [
+      33.5,
+      5,
+      -7
+    ],
+    "description": {
+      "fr": "Les groupes d’ouvertures alternent avec des panneaux pleins. Le rythme extérieur diffère de celui de la cour.",
+      "es": "Los grupos de vanos alternan con paños ciegos. El ritmo exterior difiere del que mira al patio.",
+      "ar": "تتعاقب مجموعات النوافذ مع مساحات جدارية مصمتة، بإيقاع يختلف عن واجهات الفناء."
+    },
+    "image": null
+  },
+  {
+    "id": "west",
+    "title": {
+      "fr": "Aile Ouest",
+      "es": "Ala oeste",
+      "ar": "الجناح الغربي"
+    },
+    "position": [
+      -33.8,
+      5,
+      -7
+    ],
+    "description": {
+      "fr": "Observez les baies basses, les ouvertures hautes et les reliefs qui organisent cette façade.",
+      "es": "Observe los vanos inferiores, las ventanas altas y los relieves que organizan esta fachada.",
+      "ar": "تأمل الفتحات السفلية والنوافذ العلوية والعناصر البارزة التي تنظم هذه الواجهة."
+    },
+    "image": null
+  },
+  {
+    "id": "court",
+    "title": {
+      "fr": "Cour principale",
+      "es": "Patio principal",
+      "ar": "الفناء الرئيسي"
+    },
+    "position": [
+      0.0,
+      1.9,
+      13
+    ],
+    "description": {
+      "fr": "Les trois corps du bâtiment et le pavillon composent les limites de ce grand espace ouvert.",
+      "es": "Los tres cuerpos del edificio y el pabellón delimitan este gran espacio abierto.",
+      "ar": "تحدد أجنحة المبنى الثلاثة والجناح المركزي حدود هذا الفضاء الواسع المفتوح."
+    },
+    "image": "./images/cour-pavillon.jpg"
+  },
+  {
+    "id": "pavilion",
+    "title": {
+      "fr": "Pavillon central",
+      "es": "Pabellón central",
+      "ar": "الجناح المركزي"
+    },
+    "position": [
+      0.0,
+      6,
+      -2.5
+    ],
+    "description": {
+      "fr": "Son front à facettes avance vers la cour. Deux volumes plus bas l’accompagnent de part et d’autre.",
+      "es": "Su frente facetado avanza hacia el patio. Dos volúmenes más bajos lo acompañan a ambos lados.",
+      "ar": "تتقدم واجهته متعددة الأوجه نحو الفناء، ويحيط به حجمان منخفضان على الجانبين."
+    },
+    "image": "./images/cour-pavillon.jpg"
+  },
+  {
+    "id": "roof",
+    "title": {
+      "fr": "Toiture en tuiles",
+      "es": "Cubierta de tejas",
+      "ar": "السقف القرميدي"
+    },
+    "position": [
+      0.0,
+      12,
+      -12
+    ],
+    "description": {
+      "fr": "La couverture s’étend sur tout le pavillon. Ses versants se raccordent autour de l’avant polygonal.",
+      "es": "La cubierta se extiende sobre todo el pabellón. Sus faldones se unen alrededor del frente poligonal.",
+      "ar": "يغطي السقف الجناح المركزي بأكمله، وتتلاقى سطوحه المائلة حول الواجهة المضلعة."
+    },
+    "image": null
+  },
+  {
+    "id": "low",
+    "title": {
+      "fr": "Blocs bas",
+      "es": "Volúmenes bajos",
+      "ar": "الأحجام المنخفضة"
+    },
+    "position": [
+      10.5,
+      3.4,
+      -6.5
+    ],
+    "description": {
+      "fr": "Son front à facettes avance vers la cour. Deux volumes plus bas l’accompagnent de part et d’autre.",
+      "es": "Su frente facetado avanza hacia el patio. Dos volúmenes más bajos lo acompañan a ambos lados.",
+      "ar": "تتقدم واجهته متعددة الأوجه نحو الفناء، ويحيط به حجمان منخفضان على الجانبين."
+    },
+    "image": null
+  },
+  {
+    "id": "inner",
+    "title": {
+      "fr": "Façades sur cour",
+      "es": "Fachadas al patio",
+      "ar": "واجهات الفناء"
+    },
+    "position": [
+      18.0,
+      5,
+      2
+    ],
+    "description": {
+      "fr": "Les grandes baies du rez-de-chaussée et les petites ouvertures de l’étage forment deux registres distincts.",
+      "es": "Los grandes vanos de la planta baja y las pequeñas ventanas superiores forman dos registros distintos.",
+      "ar": "تشكل الفتحات الكبيرة في الطابق الأرضي والنوافذ الصغيرة في الطابق العلوي مستويين متميزين."
+    },
+    "image": null
+  }
+]

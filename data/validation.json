@@ -1,0 +1,81 @@
+{
+  "devices": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "errors": [],
+      "requestsOutsideSubdirectory": [],
+      "tourAudit": {
+        "samples": 66,
+        "violations": 0,
+        "finalIndex": 10
+      },
+      "collision": {
+        "blockedCount": 156,
+        "inside": false,
+        "position": [
+          0,
+          7,
+          -3.000000000000014
+        ]
+      },
+      "overflow": false
+    },
+    {
+      "name": "tablet",
+      "width": 820,
+      "height": 1180,
+      "errors": [],
+      "requestsOutsideSubdirectory": [],
+      "tourAudit": {
+        "samples": 66,
+        "violations": 0,
+        "finalIndex": 10
+      },
+      "collision": {
+        "blockedCount": 156,
+        "inside": false,
+        "position": [
+          0,
+          7,
+          -3.000000000000014
+        ]
+      },
+      "overflow": false
+    },
+    {
+      "name": "smartphone",
+      "width": 390,
+      "height": 844,
+      "errors": [],
+      "requestsOutsideSubdirectory": [],
+      "tourAudit": {
+        "samples": 66,
+        "violations": 0,
+        "finalIndex": 10
+      },
+      "collision": {
+        "blockedCount": 156,
+        "inside": false,
+        "position": [
+          0,
+          7,
+          -3.000000000000014
+        ]
+      },
+      "overflow": false
+    }
+  ],
+  "checks": [
+    "Actual V2 GLB loads",
+    "All resources inside deployment subdirectory",
+    "No browser errors or HTTP failures",
+    "11 guided destinations and sampled swept routes clear",
+    "Free movement blocked at pavilion",
+    "Hotspot opens",
+    "FR AR RTL ES",
+    "History dialog",
+    "Desktop tablet smartphone emulation"
+  ]
+}
